@@ -1,0 +1,134 @@
+@import '../styles/variables';
+
+body {
+  font-family: 'Raleway';
+  color: $letter-dark;
+  -webkit-tap-highlight-color: transparent;
+}
+p {
+  line-height: 1.5rem;
+}
+input:focus,
+button:focus {
+  outline: transparent;
+}
+.main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 82vh;
+}
+.project_container {
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  margin: 3rem auto;
+  margin-bottom: 3rem;
+  max-width: 1450px;
+  width: 100%;
+}
+.project_container_side {
+  max-width: 32rem;
+  margin: 1rem;
+}
+.project_container_side_left {
+  max-width: 32rem;
+}
+
+@media only screen and (min-width: 1239px) {
+  .project_container_side_right {
+    overflow: auto;
+  }
+}
+.title_section {
+  text-align: center;
+  color: $letter-dark;
+  h1 {
+    margin-bottom: 1rem;
+    margin-top: 2rem;
+  }
+  div {
+    margin: 0 auto;
+    .title_section_line {
+      width: 5rem;
+      border-bottom: 5px solid $red;
+      margin: 0 auto;
+    }
+  }
+}
+.text_container {
+  p {
+    font-size: 18px;
+    margin-bottom: 0.8rem;
+  }
+  ul {
+    margin-left: 0;
+    li {
+      margin-left: 0;
+      list-style: none;
+      font-size: 16px;
+      line-height: 1.5;
+    }
+  }
+}
+.project_image_container {
+  position: relative;
+  p {
+    position: absolute;
+    top: -2rem;
+  }
+  img {
+    width: 100%;
+  }
+}
+.description {
+  margin-top: 2rem;
+  text-align: justify;
+}
+.buttons_container {
+  display: flex;
+  justify-content: space-evenly;
+  div {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    p {
+      font-size: 18px;
+    }
+    ul {
+      display: flex;
+      list-style: none;
+      margin-left: 0;
+      li {
+        padding-left: 0;
+        padding: 0.4rem 0.2rem 0 0.2rem;
+        cursor: pointer;
+        a {
+          text-decoration: none;
+          svg {
+            width: 2.5rem;
+            height: 2.5rem;
+          }
+        }
+      }
+    }
+  }
+}
+.button_demo {
+  margin: 0.5rem 1rem;
+  font-weight: 700;
+  text-align: center;
+  background-color: $button-blue;
+  color: $letter-light;
+  text-decoration: none;
+  padding: 0.5rem 1rem;
+  transition: background-color 0.2s ease;
+}
+.button_demo:hover {
+  background-color: $button-blue-hover;
+}
+.underline {
+  text-decoration: underline;
+  margin-top: 1rem;
+}
