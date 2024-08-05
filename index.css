@@ -413,8 +413,24 @@ body:not(.user-is-tabbing) a:focus {
     font-size: var(--font-size-normal);
 }
 
+.header__content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    max-width: var(--container-max-width);
+    margin: 0 auto;
+    padding: var(--gutter-normal);
+    height: calc(100vh - 60px); /* Adjust height if necessary to account for the nav height */
+}
+
+.header__text-box {
+    flex: 1;
+    position: relative;
+    z-index: 1; /* Ensure text is on top */
+}
+
 .header__text {
-    position: absolute;
     top: 50%;
     transform: translateY(-50%);
 }
@@ -424,6 +440,39 @@ body:not(.user-is-tabbing) a:focus {
     max-width: var(--container-medium-width);
     font-family: 'Jost', sans-serif;
     font-size: var(--font-size-medium);
+}
+
+.header__image {
+    flex-shrink: 0;
+    max-width: 500px; /* Set a max-width for the image */
+    z-index: 0; /* Ensure image is behind the text */
+}
+
+.header__image img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+@media(max-width: 900px) {
+    .header__content {
+        flex-direction: column;
+        align-items: center;
+        height: auto; /* Adjust height for smaller screens */
+    }
+
+    .header__image {
+        margin-top: var(--gutter-normal);
+    }
+
+    .header__text-box {
+        top: 0;
+        transform: none;
+    }
+
+    .header__text p {
+        max-width: 90%; /* Ensure text is not too narrow on small screens */
+    }
 }
 
 @media(max-width: 500px) {
