@@ -339,6 +339,7 @@ body:not(.user-is-tabbing) a:focus {
     display: flex;
     justify-content: flex-end;
     padding: var(--gutter-normal) 0;
+    padding-top: 20px; /* Add padding to the top */
 }
 
 .nav__items {
@@ -353,6 +354,12 @@ body:not(.user-is-tabbing) a:focus {
 @media(max-width: 500px) {
     .nav {
         justify-content: center;
+        padding-top: 30px; /* Increase padding to prevent overlap */
+    }
+
+    .heading-primary {
+        margin-top: 60px; /* Add more margin to ensure it doesn't overlap */
+        font-size: 3.5rem; /* Adjust font size for better fit */
     }
 }
 
@@ -360,11 +367,22 @@ body:not(.user-is-tabbing) a:focus {
     .nav__item:not(:last-child) {
         margin-right: var(--gutter-normal);
     }
+
+    .heading-primary {
+        margin-top: 80px; /* Increase space on very small screens */
+        font-size: 3rem; /* Further adjust font size if necessary */
+    }
 }
 
 @media(max-width: 300px) {
     .nav {
         font-size: var(--font-size-small);
+        padding-top: 40px; /* Increase padding for very small screens */
+    }
+
+    .heading-primary {
+        margin-top: 100px; /* Further increase space */
+        font-size: 2.5rem; /* Adjust font size */
     }
 }
 
@@ -386,17 +404,7 @@ body:not(.user-is-tabbing) a:focus {
     display: inline-block;
     height: 1rem;
     background: var(--white);
-    transition: all 0.25s cubic-bezier(1, 0.68, 0.16, 0.9);
-}
-
-.nav__link:hover {
-    color: var(--pink);
-}
-
-.nav__link:hover::after {
-    right: 0;
-    height: 2px;
-    background: var(--pink);
+    transition: all 0.25s cubic-bezie
 }
 
 /* --------------------------------------- */
