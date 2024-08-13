@@ -40,11 +40,18 @@
   <header class="header" role="banner" id="top">
     <div class="row">
         <nav class="nav" role="navigation">
-            <ul class="nav__items">
-                <li class="nav__item"><a href="#about" class="nav__link">Acerca de mí</a></li>
-                <li class="nav__item"><a href="#work" class="nav__link">Herramientas</a></li>
-                <li class="nav__item"><a href="#contact" class="nav__link">Ponte en contacto</a></li>
-            </ul>
+          <div class="language-toggle">
+            <input type="checkbox" id="language-switcher" class="language-switcher">
+            <label for="language-switcher" class="toggle-label">
+                <span class="toggle-span" id="toggle-span-en">EN</span>
+                <span class="toggle-span" id="toggle-span-es">ES</span>
+            </label>
+          </div>
+          <ul class="nav__items">
+              <li class="nav__item"><a href="#about" class="nav__link">Acerca de mí</a></li>
+              <li class="nav__item"><a href="#work" class="nav__link">Herramientas</a></li>
+              <li class="nav__item"><a href="#contact" class="nav__link">Ponte en contacto</a></li>
+          </ul>
         </nav>
     </div>
     <div class="header__content row">
