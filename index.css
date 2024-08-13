@@ -330,86 +330,10 @@ body:not(.user-is-tabbing) a:focus {
         right: 1rem;
     }
 }
-
 /* --------------------------------------- */
-/* ----- Navigation ----- */
+/* ----- Header and Navigation ----- */
 /* --------------------------------------- */
 
-.nav {
-    display: flex;
-    justify-content: flex-end;
-    padding: var(--gutter-normal) 0;
-    padding-top: 20px; /* Add padding to the top */
-}
-
-.nav__items {
-    display: flex;
-    list-style: none;
-}
-
-.nav__item:not(:last-child) {
-    margin-right: var(--gutter-medium);
-}
-
-@media(max-width: 500px) {
-    .nav {
-        justify-content: center;
-        padding-top: 30px; /* Increase padding to prevent overlap */
-    }
-
-    .heading-primary {
-        margin-top: 60px; /* Add more margin to ensure it doesn't overlap */
-        font-size: 3.5rem; /* Adjust font size for better fit */
-    }
-}
-
-@media(max-width: 400px) {
-    .nav__item:not(:last-child) {
-        margin-right: var(--gutter-normal);
-    }
-
-    .heading-primary {
-        margin-top: 80px; /* Increase space on very small screens */
-        font-size: 3rem; /* Further adjust font size if necessary */
-    }
-}
-
-@media(max-width: 300px) {
-    .nav {
-        font-size: var(--font-size-small);
-        padding-top: 40px; /* Increase padding for very small screens */
-    }
-
-    .heading-primary {
-        margin-top: 100px; /* Further increase space */
-        font-size: 2.5rem; /* Adjust font size */
-    }
-}
-
-.nav__link {
-    position: relative;
-    display: inline-block;
-    padding: 1rem 0;
-    text-decoration: none;
-    color: inherit;
-    transition: all .2s;
-}
-
-.nav__link::after {
-    content: '';
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    right: 100%;
-    display: inline-block;
-    height: 1rem;
-    background: var(--white);
-    transition: all 0.25s cubic-bezie
-}
-
-/* --------------------------------------- */
-/* ----- Header ----- */
-/* --------------------------------------- */
 .header {
     background: linear-gradient(rgba(0,0,0, .1), rgba(0,0,0, .4)), 
         url('./images/header.jpg');
@@ -422,7 +346,7 @@ body:not(.user-is-tabbing) a:focus {
 
 .header__content {
     display: flex;
-    align-items: center;
+    align-items: center; /* Vertically center the content */
     justify-content: space-between;
     width: 100%;
     max-width: var(--container-max-width);
@@ -451,7 +375,7 @@ body:not(.user-is-tabbing) a:focus {
 
 .header__image {
     flex-shrink: 0;
-    max-width: 500px; /* Set a max-width for the image */
+    max-width: 500px; /* Increase the max-width of the logo */
     z-index: 0; /* Ensure image is behind the text */
 }
 
@@ -461,13 +385,53 @@ body:not(.user-is-tabbing) a:focus {
     display: block;
 }
 
+.nav {
+    display: flex;
+    align-items: center; /* Vertically center items */
+    justify-content: flex-end; /* Align items to the right */
+    padding: var(--gutter-normal) 0;
+    padding-top: 20px; /* Add padding to the top */
+}
+
 .language-toggle {
-    display: inline-block;
+    display: flex; /* Use flex to align items */
+    align-items: center; /* Vertically center the toggle switch */
+    justify-content: center; /* Center the toggle within its container */
     position: relative;
     width: 70px;
     height: 34px;
-    margin-left: 20px;
-    margin-right: 20px; /* Space between toggle and navigation */
+    margin-right: 40px; /* Increase space between toggle and navigation */
+}
+
+.nav__items {
+    display: flex;
+    list-style: none;
+    align-items: center; /* Vertically center the nav items */
+}
+
+.nav__item:not(:last-child) {
+    margin-right: var(--gutter-medium);
+}
+
+.nav__link {
+    position: relative;
+    display: inline-block;
+    padding: 1rem 0;
+    text-decoration: none;
+    color: inherit;
+    transition: all .2s;
+}
+
+.nav__link::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 100%;
+    display: inline-block;
+    height: 1rem;
+    background: var(--white);
+    transition: all 0.25s cubic-bezier(1, 0.68, 0.16, 0.9);
 }
 
 .language-switcher {
@@ -549,6 +513,7 @@ body:not(.user-is-tabbing) a:focus {
 
     .header__image {
         margin-top: var(--gutter-normal);
+        max-width: 250px; /* Reduce the size on smaller screens */
     }
 
     .header__text-box {
@@ -589,6 +554,7 @@ body:not(.user-is-tabbing) a:focus {
         margin-bottom: 10px; /* Adjust margin for better spacing on small screens */
     }
 }
+
 
 
 /* --------------------------------------- */
