@@ -48,18 +48,18 @@
             </label>
           </div>
           <ul class="nav__items">
-              <li class="nav__item"><a href="#about" class="nav__link">Acerca de mí</a></li>
-              <li class="nav__item"><a href="#work" class="nav__link">Herramientas</a></li>
-              <li class="nav__item"><a href="#contact" class="nav__link">Ponte en contacto</a></li>
+              <li class="nav__item"><a href="#about" id="navAbout" class="nav__link">Acerca de mí</a></li>
+              <li class="nav__item"><a href="#work" id="navWork" class="nav__link">Herramientas</a></li>
+              <li class="nav__item"><a href="#contact" id="navContact" class="nav__link">Ponte en contacto</a></li>
           </ul>
         </nav>
     </div>
     <div class="header__content row">
         <div class="header__text-box">
             <div class="header__text">
-                <h1 class="heading-primary"><span>Adriana B.</span></h1>
-                <p>Astróloga basada en la tradición, con elementos de la astrología moderna.</p>
-                <a href="#contact" class="btn btn--pink">Ponte en contacto</a>
+                <h1 class="heading-primary"><span id="headerTitle">Adriana B.</span></h1>
+                <p id="headerSubtitle">Astróloga basada en la tradición, con elementos de la astrología moderna.</p>
+                <a href="#contact" class="btn btn--pink" id="headerButton">Ponte en contacto</a>
             </div>
         </div>
         <div class="header__image">
@@ -74,11 +74,11 @@
 
   <section class="about" id="about">
     <div class="row">
-      <h2>Acerca de mi</h2>
+      <h2 id="aboutTitle">Acerca de mi</h2>
       <div class="about__content">
         <div class="about__text">
           <!-- Replace the below paragraph with info about yourself -->
-          <p>
+          <p id="aboutText">
             La espiritualidad siempre ha estado presente en mi vida, desde mis primeros años
             de vida con la formación católica impartida en el colegio en Colombia, mi país
             natal. Aun así, con esa base, mientras estaba en la universidad, leía libros de la
@@ -131,15 +131,15 @@
 
     <section class="work" id="work">
       <div class="row">
-        <h2>Herramientas y terapias de ayuda</h2>
+        <h2 id="workTitle">Herramientas y terapias de ayuda</h2>
         <div class="work__boxes">
 
           <!-- Each div with the work__box class is a project. -->
 
           <div class="work__box">
             <div class="work__text">
-              <h3>Conoce tus 3 genios de la Cábala</h3>
-              <p>
+              <h3 id="work1Title">Conoce tus 3 genios de la Cábala</h3>
+              <p id="work1Text">
                 Se obtendrán los 3 genios, ángeles o nombre de Dios, los cuales fueron dados al
                 momento de nacer. Cada uno de los ángeles o nombre de Dios están escritos en hebreo, se visualizan
                 sus letras, se invocan y se recita su salmo.
@@ -147,14 +147,14 @@
                 planetas en caso que se necesite trabajar con ellos.
               </p>
               <ul class="work__list">
-                <li>El ángel personal (algunos lo llaman el ángel de la guarda) es el ángel al que
+                <li id="work1List1">El ángel personal (algunos lo llaman el ángel de la guarda) es el ángel al que
                   siempre puedes invocar o visualizar sus letras en hebreo, en cualquier momento,
                   él te ayuda siempre que lo necesites. Puedes también leer el salmo que está
                   asociado a este nombre de Dios.</li>
-                <li>El ángel mental se obtiene de la segunda barrera del
+                <li id="work1List2">El ángel mental se obtiene de la segunda barrera del
                   zodiaco. Como su nombre lo indica este ángel te ayudara cuando tienes que usar
                   tus facultades mentales.</li>
-                <li>El ángel emocional se obtiene de la tercera barrera, calculándolo con
+                <li id="work1List3">El ángel emocional se obtiene de la tercera barrera, calculándolo con
                   tu hora de nacimiento. Por supuesto para obtener este ángel, se necesita tener la
                   hora de nacimiento verificada.</li>
               </ul>
@@ -169,8 +169,8 @@
 
           <div class="work__box">
             <div class="work__text">
-              <h3>Conoce tus ángeles lunares</h3>
-              <p>
+              <h3 id="work2Title">Conoce tus ángeles lunares</h3>
+              <p id="work2Text">
                 Son ángeles que actúan de forma inmediata o para urgencias. Ellos son los
                 ángeles que se relacionan con los acontecimientos de la vida cotidiana. No nos
                 ayudan en el plano emocional ni mental ósea con nuestros sentimientos e ideas.
@@ -189,8 +189,8 @@
 
           <div class="work__box">
             <div class="work__text">
-              <h3>Usa la Gemoastrologia</h3>
-              <p>
+              <h3 id="work3Title">Usa la Gemoastrologia</h3>
+              <p id="work3Text">
                 La gemoastrologia es una técnica que permite aliviar planetas, abrir casas
                 carentes de planetas, abrir aspectos a los planetas sin aspectar, atenuar tránsitos
                 penosos, obtener la gema del año o activar progresiones y direcciones. Dentro de
@@ -215,8 +215,8 @@
 
           <div class="work__box">
             <div class="work__text">
-              <h3>Usa la Terapia Floral</h3>
-              <p>
+              <h3 id="work4Title">Usa la Terapia Floral</h3>
+              <p id="work4Text">
                 Es tomar las esencias florares para ayudar en los procesos emocionales. Fue
                 redescubierta por el Doctor Edward Bach en los tiempos modernos y es usada
                 comúnmente en la astrología para aliviar tránsitos penosos o asociada a la luna de
@@ -245,9 +245,9 @@
 
   <section class="contact" id="contact">
     <div class="row">
-      <h2>Ponte en contacto</h2>
+      <h2 id="contactTitle">Ponte en contacto</h2>
       <div class="contact__info">
-        <p>
+        <p id="contactText">
           Aquí se hace una interpretación de lo que es tu carta natal, hablaremos de las
           energías que se plasman en el momento de nacer.
           En caso de necesitarse se verificará la hora de nacimiento usando técnicas como
