@@ -124,9 +124,9 @@ const translations = {
       // Contact Section
       contactTitle: "Get in Touch",
       contactText: `
-          Here we interpret your astral chart, and we will talk about the energies that are imprinted at the moment of birth. 
-          If necessary, the birth time will be verified using techniques such as atacires, confirmed with the Hermes Trutine, 
-          or worked with the sunrise chart.
+          Here I interpret your astral chart, and we will talk about the energies that are imprinted at the moment of birth. 
+          If necessary, the birth time will be verified using techniques such as symbolic directions (al-tasyir), confirmed with the Trutine of Hermes, 
+          or calculated with the sunrise chart.
       `,
       contactButton: "elestialq@gmail.com"
   },
