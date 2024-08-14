@@ -393,6 +393,12 @@ body:not(.user-is-tabbing) a:focus {
     padding-top: 20px; /* Add padding to the top */
 }
 
+.language-container {
+    display: flex;
+    align-items: center;
+    margin-right: auto; /* Push the toggle button to the far left */
+}
+
 .language-toggle {
     display: flex; /* Use flex to align items */
     align-items: center; /* Vertically center the toggle switch */
@@ -400,6 +406,7 @@ body:not(.user-is-tabbing) a:focus {
     position: relative;
     width: 70px;
     height: 34px;
+    margin-left: 20px; /* Adjust margin to the left of the toggle button */
     margin-right: 40px; /* Increase space between toggle and navigation */
 }
 
@@ -407,6 +414,11 @@ body:not(.user-is-tabbing) a:focus {
     display: flex;
     list-style: none;
     align-items: center; /* Vertically center the nav items */
+    margin-left: auto; /* Keep the nav items aligned to the right */
+}
+
+.nav__item {
+    min-width: 100px; /* Set a minimum width to prevent shifting */
 }
 
 .nav__item:not(:last-child) {
@@ -433,6 +445,7 @@ body:not(.user-is-tabbing) a:focus {
     background: var(--white);
     transition: all 0.25s cubic-bezier(1, 0.68, 0.16, 0.9);
 }
+
 
 .language-switcher {
     opacity: 0;
